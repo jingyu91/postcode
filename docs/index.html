@@ -59,13 +59,23 @@
         if(fullRoadAddr !== ''){
           fullRoadAddr += extraRoadAddr;
         }
+        
+        console.log(data.jibunAddress)
+        
+                console.log(data.autoJibunAddress)
+        
         var postData = {
             postcode : data.postcode,
             zonecode : data.zonecode,
             addr : fullRoadAddr,
             addr2 : data.jibunAddress
         };
-        window.postMessageToiOS(postData);
+        
+        
+        
+        console.log(postData)
+        
+        //window.postMessageToiOS(postData);
       },
       width : '100%',
       height : '100%'
