@@ -60,8 +60,8 @@
           fullRoadAddr += extraRoadAddr;
         }
         
-        var jibunAddress = '';
-        if(data.autoJibunAddress !== ''){
+        var jibunAddress = data.autoJibunAddress;
+        if(jibunAddress == ''){
           jibunAddress = fullRoadAddr;
         }
         
