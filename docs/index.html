@@ -61,19 +61,21 @@
         }
         
         console.log(data.jibunAddress)
+        console.log(data.autoJibunAddress)
+        console.log(data.roadAddress)
+        console.log(fullRoadAddr)        
         
-                console.log(data.autoJibunAddress)
+        var jibunAddress = '';
+        if(data.autoJibunAddress !== ''){
+          jibunAddress = fullRoadAddr;
+        }
         
         var postData = {
             postcode : data.postcode,
             zonecode : data.zonecode,
             addr : fullRoadAddr,
-            addr2 : data.jibunAddress
+            addr2 : jibunAddress
         };
-        
-        
-        
-        console.log(postData)
         
         //window.postMessageToiOS(postData);
       },
