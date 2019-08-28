@@ -60,7 +60,13 @@
           fullRoadAddr += extraRoadAddr;
         }
         
+                alert(data.jibunAddress);
+                        alert(data.autoJibunAddress);
+
         var jibunAddress = data.autoJibunAddress;
+        if(jibunAddress == ''){
+          jibunAddress = data.jibunAddress;
+        }
         if(jibunAddress == ''){
           jibunAddress = fullRoadAddr;
         }
